@@ -1,0 +1,46 @@
+{
+  "name": "javascript-development-environment",
+  "version": "1.0.0",
+  "description": "JavaScript development environment Pluralsight course by Cory House",
+  "scripts": {
+    "prestart": "node buildScripts/startMessage.js",
+    "start": "npm-run-all --parallel security-check open:src",
+    "open:src": "node buildScripts/srcServer.js",
+    "security-check": "nsp check",
+    "localtunnel": "lt --port 3000",
+    "share": "npm-run-all --parallel open:src localtunnel"
+  },
+  "author": "Cory House",
+  "license": "MIT",
+  "dependencies": {
+  },
+  "devDependencies": {
+    "babel-cli": "6.14.0",
+    "babel-core": "6.14.0",
+    "babel-loader": "6.2.5",
+    "babel-preset-latest": "6.14.0",
+    "babel-register": "6.14.0",
+    "chai": "3.5.0",
+    "chalk": "1.1.3",
+    "cheerio": "0.22.0",
+    "cross-env": "2.0.0",
+    "eslint": "3.4.0",
+    "eslint-plugin-import": "1.14.0",
+    "eslint-watch": "2.1.14",
+    "express": "4.14.0",
+    "html-webpack-plugin": "2.22.0",
+    "jsdom": "9.4.2",
+    "localtunnel": "1.8.1",
+    "mocha": "3.0.2",
+    "nock": "8.0.0",
+    "npm-run-all": "3.0.0",
+    "nsp": "2.6.1",
+    "numeral": "1.5.3",
+    "open": "0.0.5",
+    "rimraf": "2.5.4",
+    "webpack": "1.13.2",
+    "webpack-dev-middleware": "1.6.1",
+    "webpack-hot-middleware": "2.12.2",
+    "webpack-md5-hash": "0.0.5"
+  }
+}
