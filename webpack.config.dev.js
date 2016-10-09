@@ -1,4 +1,3 @@
-import webpack from 'webpack';
 import path from 'path';
 
 export default {
@@ -24,4 +23,4 @@ export default {
       {test: /\.css$/, loaders: ['style','css']}
     ]
   }
-};
+}
