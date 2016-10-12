@@ -38,3 +38,6 @@ jspm_packages
 
 # mock db file
 db.json
+
+# dist folder
+dist
